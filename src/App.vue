@@ -1,20 +1,20 @@
 <template>
   <div>
     <QrCard />
-    <AttributionFrontMentor />
+    <FrontMentorAttribution />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import QrCard from '@/components/QrCard.vue';
-import AttributionFrontMentor from '@/components/AttributionFrontMentor.vue';
+import FrontMentorAttribution from '@/components/FrontMentorAttribution.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
     QrCard,
-    AttributionFrontMentor,
+    FrontMentorAttribution,
   },
 });
 </script>

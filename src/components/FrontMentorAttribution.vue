@@ -1,7 +1,7 @@
 <template>
   <div class="attribution">
-    <span>Challenge by</span>
-    <a :href="frontMentorUrl" target="_blank">Frontend Mentor</a>. Coded by
+    <span>Challenge by &nbsp;</span>
+    <a :href="frontMentorUrl" target="_blank"> Frontend Mentor</a>. Coded by
     <a href="#">{{ codedBy }}</a
     >.
   </div>
@@ -21,12 +21,18 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/variables.scss';
 .attribution {
+  display: none;
   font-size: 11px;
   text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 15px auto;
 
-  a {
-    color: hsl(228, 45%, 44%);
+  @media screen and (min-width: $mobile-breakpoint) {
+    display: block;
   }
 }
 </style>
